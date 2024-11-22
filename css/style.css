@@ -25,10 +25,12 @@ a {
 }
 
 .pgs-header {
+  height: 72px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 1px 6px rgba(46, 47, 66, 0.08);
+    display: flex;
 }
 
 .hdr-container {
@@ -129,11 +131,16 @@ a {
 .first {
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46,47,66,0,7),rgba(46,47,66,07),url(/images/bgimg.jpg));
+  background-image:
+   linear-gradient(rgba(46,47,66,0,7),
+   rgba(46,47,66,07)),
+   url(../images/bgimg.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .first .container {
@@ -177,13 +184,6 @@ a {
 
 .second {
   padding: 120px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -225,6 +225,17 @@ a {
   color: #434455;
 }
 
+.second-list_items .icons_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+  height: 112px;
+}
+
 .third {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -240,7 +251,6 @@ a {
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
-  gap: 24px;
 }
 
 .third__list {
@@ -257,6 +267,13 @@ a {
 }
 
 .third .social-list{
+ display: flex;
+ justify-content: center;
+ gap: 24PX;
+ margin-top: 16PX; 
+}
+
+.third .social-list .list-item{
   width: 40px;
   height: 40px;
 }
@@ -318,9 +335,9 @@ a {
   transition: box-shadow 250ms cubic-bezier(04.,0,0.2,1);
 }
 
-.forth__list .list-items{
+.forth__list .list-items:hover{
   box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .forth__list .list-items .img-container{
@@ -372,7 +389,7 @@ a {
   margin-bottom: 72px;
 }
 
-.list-item__title {
+.forth .list-item__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
