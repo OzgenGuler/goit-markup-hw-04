@@ -413,6 +413,11 @@ a {
   padding: 100px 0;
 }
 
+.footer .container{
+  display: flex;
+  align-items: baseline;
+}
+
 .footer .textfooter {
   color: #f4f4fd;
   letter-spacing: 0.02em;
@@ -440,11 +445,6 @@ a {
 
 .subcontainer{
   margin-right: 120px;
-}
-
-.social-container{
-  display: flex;
-  align-items: baseline;
 }
 
 .social-container .text{
